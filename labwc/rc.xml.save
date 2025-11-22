@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<labwc_config>
+  <keyboard>
+    <default/>
+    <keybind key="W-t">
+      <action name="Execute">
+        <command>xfce4-terminal</command>
+      </action>
+    </keybind>
+  </keyboard>
+</labwc_config>

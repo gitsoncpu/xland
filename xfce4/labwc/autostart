@@ -1,0 +1,20 @@
+#!/bin/sh
+# Start XFCE4's polkit agent
+/usr/libexec/polkit-gnome-authentication-agent-1 >/dev/null 2>&1 &
+# XFCE components you might want
+# waybar >/dev/null 2>&1 &
+/usr/lib/xdg-desktop-portal 2>&1 &
+/usr/lib/xdg-desktop-portal-wlr 2>&1 &
+
+#xfce4-panel >/dev/null 2>&1 &
+#xfsettingsd >/dev/null 2>&1 &
+# xfce4-power-manager >/dev/null 2>&1 &
+#(sleep 5 && xfce4-notifyd) >/dev/null 2>&1 &
+
+pipewire &
+sleep 2
+pipewire-pulse >/dev/null 2>&1 &
+
+
+swaybg -i /home/jab/Pictures/xfce-leaves.svg >/dev/null 2>&1 &
+# swaybg -i /home/jab/Pictures/skies.png >/dev/null 2>&1 &

@@ -1,0 +1,150 @@
+<?xml version="1.0"?>
+<labwc_config>
+
+  <placement>
+    <policy>cascade</policy>
+    <cascadeOffset x="40" y="30" />
+  </placement>
+
+  <theme>
+    <name>Adwaita-dark</name>
+    <cornerRadius>7</cornerRadius>
+    <font name="Ubuntu Nerd Font" size="10"/>
+  </theme>
+
+  <desktops number="4" />
+  <desktops>
+        <popupTime>1000</popupTime>
+        <names>
+         <name>1</name>
+         <name>2</name>
+         <name>3</name>
+         <name>4</name>
+       </names>
+    </desktops>
+
+
+ <focus>
+    <followMouse>yes</followMouse>
+    <followMouseRequiresMovement>yes</followMouseRequiresMovement>
+    <raiseOnFocus>no</raiseOnFocus>
+  </focus>
+
+
+
+
+  <keyboard>
+    <default/>
+
+    <keybind key="W-t">
+      <action name="Execute" command="xfce4-terminal"/>
+    </keybind>
+    <keybind key="W-e">
+      <action name="Execute" command="thunar"/>
+     </keybind>
+     
+    <keybind key="W-4">
+      <action name="Execute" command="firefox"/>
+    </keybind>
+    <keybind key="W-5">
+      <action name="Execute" command="geany"/>
+    </keybind>
+ <keybind key="W-S-r">
+  <action name="Execute" command="labwc --reconfigure"/>
+</keybind>
+
+
+<keybind key="W-S-s">
+  <action name="Execute" command="sh -c 'slurp | grim -g - /home/jab/Pictures/Screenshots/$(date +%Y%m%d_%H%M).png'"/>
+</keybind>
+
+
+<keybind key="W-6">
+  <action name="Execute" command="hyprpicker -f hex"/>
+</keybind>
+    <!--
+      Remove a previously defined keybind
+      A shorter alternative is <keybind key="W-F4" />
+    -->
+    <keybind key="W-F4">
+      <action name="None"/>
+    </keybind>
+
+    <numlock>on</numlock>
+
+    <!--
+       Suggested Xfce key bindings.
+    -->
+    
+    <keybind key="W-q">
+      <action name="Close" />
+    </keybind>
+    <keybind key="A-Tab">
+      <action name="NextWindow" />
+    </keybind>
+    <keybind key="W-Tab">
+      <action name="ToggleMaximize" />
+    </keybind>
+    <keybind key="W-Z">
+      <action name="GoToDesktop" to="1" />
+    </keybind>
+    <keybind key="W-X">
+      <action name="GoToDesktop" to="2" />
+    </keybind>
+    <keybind key="W-c">
+      <action name="GoToDesktop" to="3" />
+    </keybind>
+    <keybind key="W-V">
+      <action name="GoToDesktop" to="4" />
+    </keybind>
+
+    <keybind key="W-S-Z">
+      <action name="SendToDesktop" to="1" follow="yes"/>
+    </keybind>
+    <keybind key="W-S-X">
+      <action name="SendToDesktop" to="2" follow="yes" />
+    </keybind>
+    <keybind key="W-S-c">
+      <action name="SendToDesktop" to="3" follow="yes" />
+    </keybind>
+    <keybind key="W-S-V">
+      <action name="SendToDesktop" to="4" follow="yes" />
+    </keybind>
+    
+    
+    <keybind key="XF86_AudioLowerVolume">
+      <action name="Execute" command="pactl set-sink-volume @DEFAULT_SINK@ -4%" />
+    </keybind>
+    <keybind key="XF86_AudioRaiseVolume">
+      <action name="Execute" command="pactl set-sink-volume @DEFAULT_SINK@ +4%" />
+    </keybind>
+    <keybind key="XF86_AudioMute">
+      <action name="Execute" command="pactl set-sink-mute '@DEFAULT_SINK@' toggle" />
+    </keybind>
+    
+    
+  </keyboard>
+  
+  
+   <mouse>
+    <default />
+    <!-- Show a custom menu on desktop right click -->
+    <context name="Root">
+      <mousebind button="left" action="Press">
+        <action name="ShowMenu" menu="some-custom-menu" />
+      </mousebind>
+           <mousebind direction="Up" action="Scroll">
+        <action name="None" to="left" wrap="yes" />
+      </mousebind>
+      <mousebind direction="Down" action="Scroll">
+        <action name="None" to="right" wrap="yes" />
+      </mousebind>
+    </context>
+  </mouse>
+ 
+  <snapping>
+    <range>10</range>
+  </snapping>
+
+</labwc_config>
+
