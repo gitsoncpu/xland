@@ -4,7 +4,7 @@
 
 ```bash
 labwc with xfce4 elements autostarted is preferred over 
-XFCEs official session at ~/.config/xfce/labwc/
+XFCEs Wayland session at ~/.config/xfce/labwc/
 ```
 
 ### random
