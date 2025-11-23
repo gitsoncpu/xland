@@ -24,8 +24,8 @@
     </desktops>
 
  <focus>
-    <followMouse>yes</followMouse>
-    <followMouseRequiresMovement>yes</followMouseRequiresMovement>
+    <followMouse>no</followMouse>
+    <followMouseRequiresMovement>no</followMouseRequiresMovement>
     <raiseOnFocus>no</raiseOnFocus>
   </focus>
 

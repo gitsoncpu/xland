@@ -9,19 +9,19 @@
   <property name="background-darkness" type="double" value="1"/>
   <property name="misc-confirm-close" type="bool" value="false"/>
   <property name="color-background" type="string" value="#353535353535"/>
-  <property name="color-foreground" type="string" value="#dcdcdc"/>
+  <property name="color-foreground" type="string" value="#2e2ec2c27e7e"/>
   <property name="color-background-vary" type="bool" value="false"/>
-  <property name="color-cursor-foreground" type="string" value=""/>
-  <property name="color-cursor" type="string" value="#dcdcdc"/>
-  <property name="color-cursor-use-default" type="bool" value="true"/>
+  <property name="color-cursor-foreground" type="string" value="#ffffffffffff"/>
+  <property name="color-cursor" type="string" value="#ffffffffffff"/>
+  <property name="color-cursor-use-default" type="bool" value="false"/>
   <property name="color-selection" type="string" value=""/>
   <property name="color-selection-background" type="string" value=""/>
   <property name="color-selection-use-default" type="bool" value="true"/>
   <property name="color-bold" type="string" value=""/>
   <property name="color-bold-use-default" type="bool" value="true"/>
-  <property name="color-palette" type="string" value="rgb(202,211,245);rgb(112,80,80);rgb(96,180,138);rgb(223,175,143);rgb(154,184,215);rgb(220,140,195);rgb(140,208,211);rgb(220,220,220);rgb(112,144,128);rgb(220,163,163);rgb(114,213,163);rgb(240,223,175);rgb(148,191,243);rgb(236,147,211);rgb(147,224,227);rgb(255,255,255)"/>
+  <property name="color-palette" type="string" value="#000000;#aa0000;#00aa00;#aa5500;#0000aa;#aa00aa;#00aaaa;#aaaaaa;#555555;#ff5555;#55ff55;#ffff55;#5555ff;#ff55ff;#55ffff;#ffffff"/>
   <property name="color-bold-is-bright" type="bool" value="true"/>
-  <property name="tab-activity-color" type="string" value="#a5a51d1d2d2d"/>
+  <property name="tab-activity-color" type="string" value="#aa0000"/>
   <property name="misc-cursor-shape" type="string" value="TERMINAL_CURSOR_SHAPE_UNDERLINE"/>
-  <property name="misc-cursor-blinks" type="bool" value="false"/>
+  <property name="misc-cursor-blinks" type="bool" value="true"/>
 </channel>
